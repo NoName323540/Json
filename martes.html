@@ -1,0 +1,134 @@
+<!--Martes..html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objetos en JS</title>
+	<link rel="stylesheet" type="text/css" href="martes.css">
+</head>
+<body>
+<h1>Otra manera de usar JSON</h1>
+<div id="target">
+<script>
+    let data={
+        "response":{
+            "docs":[
+            {"id":"1",
+             "nombre":"Minecraaft",
+             "lanzamiento":"noviembre del 2011",
+             "plataformas":"pc, ps5, ps4, nintendo swich, xbox one, etc2",
+             "imagen":"./imagenes./1.jpg"},
+             {"id":"2",
+             "nombre":"Dokkan Battle",
+             "lanzamiento":"enero del 2015",
+             "plataformas":"Android e IOS",
+             "imagen":"./imagenes./2.jpg"},
+             {"id":"3",
+             "nombre":"Mortal Kombat 11",
+             "lanzamiento":"Abril de 2019",
+             "plataformas":"PS 4 PS 5 Xbox One Xbox Series X/S Nintendo Switch ",
+             "imagen":"./imagenes./3.jpg"},
+             {"id":"4",
+             "nombre":"Dragon Ball Z BT3",
+             "lanzamiento":"octubre de 2007",
+             "plataformas":"PlayStation 2, Wii",
+             "imagen":"./imagenes./4.jpg"},
+             {"id":"5",
+             "nombre":"Clash Royale",
+             "lanzamiento":"octubre de 2007",
+             "plataformas":"Android, IOS",
+             "imagen":"./imagenes./5.jpg"},
+             {"id":"6",
+             "nombre":"Dragon Ball Z Kakarot",
+             "lanzamiento":"enero de 2020",
+             "plataformas":"PS4, Xbox One y PC.",
+             "imagen":"./imagenes./6.jpg"},
+             {"id":"7",
+             "nombre":"Dragon Ball Legends",
+             "lanzamiento":"mayo del 2018",
+             "plataformas":"Android, IOS",
+             "imagen":"./imagenes./7.jpg"},
+             {"id":"8",
+             "nombre":"GTA V",
+             "lanzamiento":"septiembre de 2013",
+             "plataformas":" PS4, Xbox One, Microsoft Windows, PS5 Xbox Series X|S",
+             "imagen":"./imagenes./8.jpg"},
+             {"id":"9",
+             "nombre":"Fornite",
+             "lanzamiento":"julio de 2017",
+             "plataformas":"PC PS4 PS5 Xbox One Xbox Series X/S Nintendo Swich",
+             "imagen":"./imagenes./9.jpg"},
+             {"id":"10",
+             "nombre":"PUBG/Movile",
+             "lanzamiento":"marzo de 2017",
+             "plataformas":"PS4  PS5 Xbox One Xbox Series X/S PC Android IOS ",
+             "imagen":"./imagenes./10.jpg"},
+             {"id":"11",
+             "nombre":"Call of Duty Warzone",
+             "lanzamiento":"marzo de 2020",
+             "plataformas":"PlayStation 4, en Xbox One y en PC",
+             "imagen":"./imagenes./11.jpg"},
+             {"id":"12",
+             "nombre":"Candy Crush",
+             "lanzamiento":"abril de 2012",
+             "plataformas":"Android, iOS, Windows Phone, Facebook, Windows 10",
+             "imagen":"./imagenes./12.jpg"},
+             {"id":"13",
+             "nombre":"Plants VS Zombies",
+             "lanzamiento":"mayo de 2009",
+             "plataformas":"Android iOS Xbox 360 Xbox One S  PS3",
+             "imagen":"./imagenes./13.jpg"},
+             {"id":"14",
+             "nombre":"Amazon",
+             "lanzamiento":"julio de 1995",
+             "plataformas":"Google Chrome. Mozilla Firefox. Apple Safari. Microsoft Edge.",
+             "imagen":"./imagenes./14.jpg"},
+             {"id":"15",
+             "nombre":"Youtube",
+             "lanzamiento":"febrero de 2005",
+             "plataformas":"PC Android iOS Xbox 360, Tv, Apple Watch",
+             "imagen":"./imagenes./15.jpg"},
+             {"id":"16",
+             "nombre":"Facebook",
+             "lanzamiento":"febrero del 2004",
+             "plataformas":"PC Android iOS",
+             "imagen":"./imagenes./16.jpg"},
+             {"id":"17",
+             "nombre":"Instagram",
+             "lanzamiento":"abril de 2012",
+             "plataformas":"PC Android  iOS",
+             "imagen":"./imagenes./17.jpg"},
+             {"id":"18",
+             "nombre":"Twitter",
+             "lanzamiento":"marzo de 2006",
+             "plataformas":"Windows 10: Edge. Android: Chrome. MacOS/iOS: Safari.",
+             "imagen":"./imagenes./18.jpg"},
+             {"id":"19",
+             "nombre":"Twitch",
+             "lanzamiento":"junio de 2011",
+             "plataformas":"PC Android iOS",
+             "imagen":"./imagenes./19.jpg"},
+             {"id":"20",
+             "nombre":"Netflix",
+             "lanzamiento":"agosto de 1997",
+             "plataformas":"Consolas de juegos Smartphones y tablets. PC y laptops.",
+             "imagen":"./imagenes./20.jpg"}
+            ]
+
+        }};
+        let target=document.querySelector('#target');
+        data=data.response.docs;
+        data.forEach((value,  key)=>{
+            target.innerHTML+=`<div class="image-list">
+            <img src="${value.imagen}"class="image-styles"/>
+            <p class="image-nombre">${value.nombre}</p>
+            <p class="image-real">${value.lanzamiento}</p>
+            <p class="image-poderes">${value.plataformas}</p>
+            </div>
+            
+            `
+           
+        });
+
+</script>
+</body>
+</html>
